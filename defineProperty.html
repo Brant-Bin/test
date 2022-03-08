@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>defineProperty方法</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            name: '薛文彬',
+            sex: 'boy'
+        }
+        Object.defineProperty(person, 'age', {
+            value: 18,
+            enumerable: true,   //控制属性是否可以枚举,默认是false
+            writable: true      //控制属性是否可以被修改，默认是false
+        })
+
+        console.log(person)
+    </script>
+</body>
+
+</html>
